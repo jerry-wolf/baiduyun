@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name              网盘直链下载助手
-// @namespace         https://github.com/syhyz1990/baiduyun
+// @namespace         https://github.com/jerry-wolf/baiduyun
 // @version           6.2.3
 // @author            YouXiaoHou
-// @description       👆👆👆👆👆👆👆 - 支持批量获取 ✅百度网盘 ✅阿里云盘 ✅天翼云盘 ✅迅雷云盘 ✅夸克网盘 ✅移动云盘 六大网盘的直链下载地址，配合 IDM，Xdown，Aria2，Curl，比特彗星等工具高效🚀🚀🚀下载，完美适配 Chrome，Edge，FireFox，360，QQ，搜狗，百分，遨游，星愿，Opera，猎豹，Vivaldi，Yandex，Kiwi 等 18 种浏览器。可在无法安装客户端的环境下使用，助手免费开源。😎
+// @description       👆👆👆👆👆👆👆 - 支持批量获取 ✅百度网盘 ✅阿里云盘 ✅天翼云盘 ✅迅雷云盘 ✅夸克网盘 ✅移动云盘 六大网盘的直链下载地址，配合 IDM，Xdown，Aria2，Curl，比特彗星等工具高效🚀🚀🚀下载，完美适配 Chrome，Edge，FireFox，360，QQ，搜狗，百分，遨游，星愿，Opera，猎豹，Vivaldi，Yandex，Kiwi 等 18 种浏览器。可在无法安装客户端也无法关注微信公众号的环境下使用，助手免费开源。😎
 // @license           AGPL-3.0-or-later
 // @homepage          https://www.youxiaohou.com/install.html
 // @supportURL        https://github.com/syhyz1990/baiduyun
@@ -581,32 +581,7 @@
             this.addStyle('panlinker-style', 'style', css);
         },
 
-        async initDialog() {
-            let result = await Swal.fire({
-                title: pan.init[0],
-                html: `<div><img style="width: 250px;margin-bottom: 10px;" src="${pan.img}" alt="${pan.img}"><input class="swal2-input" id="init" type="text" placeholder="${pan.init[1]}"></div>`,
-                allowOutsideClick: false,
-                showCloseButton: true,
-                confirmButtonText: '确定'
-            });
-            if (result.isDismissed && result.dismiss === 'close') return;
-            if (pan.num === $('#init').val() || pan.license === $('#init').val()) {
-                base.setValue('setting_init_code', pan.num);
-                base.setValue('license', pan.license);
-                message.success(pan.init[2]);
-                setTimeout(() => {
-                    history.go(0);
-                }, 1500);
-            } else {
-                await Swal.fire({
-                    title: pan.init[3],
-                    text: pan.init[4],
-                    confirmButtonText: '重新输入',
-                    imageUrl: pan.img,
-                });
-                await this.initDialog();
-            }
-        },
+        async initDialog() {},
     };
 
     let baidu = {
