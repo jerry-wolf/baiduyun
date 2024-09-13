@@ -53,7 +53,7 @@
 
 **[Netdisk Direct Download Helper]** is suitable for browsers that support the installation of Tampermonkey or Violent Monkey extensions on multiple platforms, such as Chrome, 360, QQ, UC, etc.
 
-Support Baidu Netdisk and Aliyun NetDisk web page. After installation, a `Download Helper` button will appear on the corresponding interface, which can be used with multi-threaded download tools to achieve speed-up.
+Support Baidu Netdisk and Aliyun NetDisk web page. After installation, a `Download Helper` button will appear on the corresponding interface, which can be used with multi-threaded download tools to achieve speed-up. **Compared to the original version, the need to follow the WeChat Official Account has been removed.**
 
 ## 🎨 Interface
 
