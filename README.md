@@ -48,7 +48,7 @@
 
 [中文文档](README.md) | [English Docs](README_EN.md)
 
-【网盘直链下载助手】是一款免费开源**获取百度网盘和阿里云盘文件真实下载地址**的油猴脚本，基于 PCSAPI，支持 Windows，Mac，Linux 等多平台，支持 IDM，XDown，Aria2 等多线程下载工具，支持 JSON-RPC 协议远程下载，支持 cURL 命令下载。
+【网盘直链下载助手】是一款免费开源**获取百度网盘和阿里云盘文件真实下载地址**的油猴脚本，基于 PCSAPI，支持 Windows，Mac，Linux 等多平台，支持 IDM，XDown，Aria2 等多线程下载工具，支持 JSON-RPC 协议远程下载，支持 cURL 命令下载。相较于[原版](https://github.com/syhyz1990/baiduyun)，移除了关注微信公众号的需求。
 
 **建议配合网盘超级会员使用**
 
